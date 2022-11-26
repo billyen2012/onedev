@@ -6,3 +6,29 @@
 	margin: -1.75rem;
 	margin-top: 0;
 }
+
+.saved-queries > .card-body {
+	display: flex;
+	flex-direction: column;
+	gap:1.5rem;
+}
+
+.saved-queries > .card-body > .personalQueries,
+.saved-queries > .card-body > .commonQueries{
+	gap:1.5rem;
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (max-width:992px) { 
+	.saved-queries > .card-body {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	.saved-queries > .card-body > .personalQueries,
+	.saved-queries > .card-body > .commonQueries{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
